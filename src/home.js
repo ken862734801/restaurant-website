@@ -1,4 +1,4 @@
-//Global function.
+//Global variable.
 const content = document.getElementById("content");
 
 //Function to create DOM text elements.
