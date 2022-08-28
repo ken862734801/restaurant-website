@@ -1,43 +1,21 @@
-//Global function.
-const content = document.getElementById("content");
+export default function loadContact(){
+    const content = document.getElementById("content");
+    //Function to create navbar.
+    navbar();
 
-//Function to create DOM text elements.
-
-function createNavList(text){
-    const li = document.createElement("li");
-    li.textContent = text;
-    li.id = text;
-
-    return li;
-};
-
-//Function to create contact page.
-
-function createContact(){
-    //Variables for header.
-    let header = document.createElement("section");
-    let nav = document.createElement("nav");
-    let navbar = document.createElement("navbar");
-
-    header.className = "header";
-    header.appendChild(nav);
-
-    nav.appendChild(navbar);
-    navbar.appendChild(createNavList("Home"));
-    navbar.appendChild(createNavList("Menu"));
-    navbar.appendChild(createNavList("Contact"));
-
-    //Variables for contact header.
+    //Variables for contact form header.
     let contactHeader = document.createElement("h2");
     contactHeader.className = "contact-header";
     contactHeader.textContent = "CONTACT US";
-    
 
     let contactSubHeader = document.createElement("p");
     contactSubHeader.className = "contact-subheader";
     contactSubHeader.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque est sed nulla placerat volutpat.Proin non lorem quis arcu rutrum volutpat ut id orci. Duis condimentum rhoncus elementum.";
 
-    
+    //Append contact headers to DOM.
+    content.appendChild(contactHeader);
+    content.appendChild(contactSubHeader);
+
     //Variables for contact form.
     let contactContainer = document.createElement("div");
     contactContainer.className = "contact-container";
@@ -58,7 +36,8 @@ function createContact(){
 
     let buttonContainer = document.createElement("div");
     let submit = document.createElement("input");
-  
+
+    //Attributes for form inputs.
     nameLabel.setAttribute("for", "name");
     name.setAttribute("type", "text");
     name.id = "name";
@@ -91,6 +70,6 @@ function createContact(){
     form.appendChild(message);
     form.appendChild(buttonContainer);
 
-};
-createContact();
+    content.appendChild(form);
 
+};
