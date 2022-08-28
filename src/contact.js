@@ -1,8 +1,7 @@
 export default function loadContact(){
+    //Content variable.
     const content = document.getElementById("content");
-    //Function to create navbar.
-    navbar();
-
+   
     //Variables for contact form header.
     let contactHeader = document.createElement("h2");
     contactHeader.className = "contact-header";
