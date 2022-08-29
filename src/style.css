@@ -1,0 +1,71 @@
+:root{
+    --main-color:#fdf8ee;
+    --secondary-color:#375542;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+body{
+    min-height: 100vh;
+    background-color:#fdf8ee;
+}
+/*Styling for the menu page.*/
+.menu-container{
+    width:40%;
+    min-width:420px;
+    margin: 0 auto;
+    color:var(--secondary-color);
+    border: 10px solid var(--secondary-color);
+    box-shadow: 6px 6px 6px rgb(148, 122, 119);
+    margin: 20px 0px;
+}
+header{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    padding-bottom:20px;
+}
+header > p{
+    font-size:0.95em;
+}
+.logo-container > img{
+    max-width:200px;
+}
+.section-title{
+    width:95%;
+    padding-bottom:5px;
+    border-bottom:1px solid var(--secondary-color);
+}
+.section-container{
+    width:80%;
+    padding:24px;
+    display:flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+.item{
+    max-width:200px;
+    margin: 15px auto;
+}
+.item-header{
+    width:100%;
+    display:flex;
+}
+.item-title{
+    width:60%;
+    font-size:0.85em;
+}
+.item-price{
+    width:40%;
+    display:flex;
+    justify-content: center;
+    font-weight:bold;
+    font-size:0.90em;
+}
+.item-description{
+    margin-top:5px;
+    font-size:0.90em;
+    font-style:italic;
+}
