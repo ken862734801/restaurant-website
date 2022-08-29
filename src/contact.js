@@ -1,7 +1,12 @@
-export default function loadContact(){
+import "./style.css";
+import {navbar} from "./components/navbar";
+
+export function loadContact(){
 
     //Variable for content div.
     const content = document.getElementById("content");
+
+    navbar();
 
     //Variables for contact form header.
     let contactHeader = document.createElement("h2");
@@ -35,18 +40,22 @@ export default function loadContact(){
 
     //Attributes for form inputs.
     nameLabel.setAttribute("for", "name");
+    nameLabel.textContent = "Full name:"
     name.setAttribute("type", "text");
     name.id = "name";
 
     emailLabel.setAttribute("for", "email");
+    emailLabel.textContent = "Email:"
     email.setAttribute("type", "email");
     email.id = "email";
 
     subjectLabel.setAttribute("for", "subject");
+    subjectLabel.textContent = "Subject:"
     subject.setAttribute("type", "text");
     subject.id = "subject";
 
     messageLabel.setAttribute("for", "message");
+    messageLabel.textContent = "Message:"
     message.id = "message";
 
     submit.setAttribute("type", "submit");
@@ -66,9 +75,12 @@ export default function loadContact(){
     form.appendChild(message);
     form.appendChild(buttonContainer);
 
+    //Append form to container.
+    contactContainer.appendChild(form);
+
     //Append contact headers to DOM.
     content.appendChild(contactHeader);
     content.appendChild(contactSubHeader);
-    content.appendChild(form);
+    content.appendChild(contactContainer);
 
 };
