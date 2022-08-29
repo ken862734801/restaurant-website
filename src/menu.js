@@ -1,4 +1,5 @@
 export default function loadMenu(){
+
     //Variable for content div.
     const content = document.getElementById("content");
 
@@ -75,11 +76,12 @@ export default function loadMenu(){
     dessertSection.appendChild(dessertTitle);
     dessertSection.appendChild(dessertContainer);
 
+    //Append elements to the DOM.
     content.appendChild(menuContainer);
     menuContainer.appendChild(pastaSection);
     menuContainer.appendChild(pizzaSection);
     menuContainer.appendChild(dessertSection);
-    
+
 };
 
 function createItem(text){
