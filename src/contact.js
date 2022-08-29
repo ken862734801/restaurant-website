@@ -1,7 +1,8 @@
 export default function loadContact(){
-    //Content variable.
+
+    //Variable for content div.
     const content = document.getElementById("content");
-   
+
     //Variables for contact form header.
     let contactHeader = document.createElement("h2");
     contactHeader.className = "contact-header";
@@ -10,10 +11,6 @@ export default function loadContact(){
     let contactSubHeader = document.createElement("p");
     contactSubHeader.className = "contact-subheader";
     contactSubHeader.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque est sed nulla placerat volutpat.Proin non lorem quis arcu rutrum volutpat ut id orci. Duis condimentum rhoncus elementum.";
-
-    //Append contact headers to DOM.
-    content.appendChild(contactHeader);
-    content.appendChild(contactSubHeader);
 
     //Variables for contact form.
     let contactContainer = document.createElement("div");
@@ -69,6 +66,9 @@ export default function loadContact(){
     form.appendChild(message);
     form.appendChild(buttonContainer);
 
+    //Append contact headers to DOM.
+    content.appendChild(contactHeader);
+    content.appendChild(contactSubHeader);
     content.appendChild(form);
 
 };
