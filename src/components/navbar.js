@@ -1,4 +1,4 @@
-export default function navbar(){
+export function navbar(){
     const content = document.getElementById("content");
 
     function createNavList(text){
