@@ -1,42 +1,5 @@
 export default function loadHome(){
 
-    //Function to create DOM text elements.
-
-    function createParagraph(text){
-        const paragraph = document.createElement("p");
-        paragraph.textContent = text;
-
-        return paragraph;
-    };
-
-    function createHeader2(text){
-        const H2 = document.createElement("h2");
-        H2.textContent = text;
-
-        return H2;
-    };
-
-    function createHeader5(text){
-        const H5 = document.createElement("h5");
-        H5.textContent = text;
-
-        return H5;
-    };
-
-    function createNavList(text){
-        const li = document.createElement("li");
-        li.textContent = text;
-        li.id = text;
-
-        return li;
-    };
-    function createListElements(text){
-        const li = document.createElement("li");
-        li.textContent = text;
-
-        return li;
-    };
-
     const content = document.getElementById("content");
 
     //Variables for header section.
@@ -140,4 +103,41 @@ export default function loadHome(){
     content.appendChild(menu);
     content.appendChild(reservation);
     content.appendChild(info);
+};
+
+//Function to create DOM text elements.
+
+function createParagraph(text){
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+
+    return paragraph;
+};
+
+function createHeader2(text){
+    const H2 = document.createElement("h2");
+    H2.textContent = text;
+
+    return H2;
+};
+
+function createHeader5(text){
+    const H5 = document.createElement("h5");
+    H5.textContent = text;
+
+    return H5;
+};
+
+function createNavList(text){
+    const li = document.createElement("li");
+    li.textContent = text;
+    li.id = text;
+
+    return li;
+};
+function createListElements(text){
+    const li = document.createElement("li");
+    li.textContent = text;
+
+    return li;
 };
