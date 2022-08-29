@@ -1,5 +1,6 @@
 export default function loadHome(){
 
+    //Variable for content div.
     const content = document.getElementById("content");
 
     //Variables for header section.
