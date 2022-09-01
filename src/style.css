@@ -9,7 +9,144 @@
 }
 body{
     min-height: 100vh;
+    min-width:100vw;
     background-color:#fdf8ee;
+}
+/*Styling for the landing page. */
+
+.hero-section{
+    background-image: url(../dist/images/background.png);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.hero-section > img{
+    min-width:200px;
+}
+.about-section{
+    background-color: var(--secondary-color);
+    color:var(--main-color);
+    margin: 0 auto;
+    padding: 80px 100px;
+    margin: 0 auto;
+}
+.about-section > h2{
+    margin-top:10px;
+    font-size:2em;
+    text-align: center;
+}
+.about-section > p{
+    margin-top:10px;
+    width:40%;
+    font-size:1.40em;
+    text-align: center;
+    border:1px solid red;
+    min-width:300px;
+    margin: 0 auto;
+}
+.menu-section{
+    display:flex;
+    flex-wrap: wrap;
+    color:var(--secondary-color);
+    padding: 120px 24px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.menu-section > .image-container > img{
+    max-width:400px;
+}
+.menu-section > .text-container{
+    width:40%;
+    max-width:500px;
+    min-width:300px;
+    margin: 0 auto;
+    padding:16px;
+    font-size:1.2em;
+}
+.text-container > p{
+    margin-top: 10px;
+}
+.menu-section > .text-container > .btn-container{
+    font-weight: bold;
+    font-size:0.75em;
+    width:100%;
+    justify-content: flex-start;
+    display:flex;
+}
+.reservation-section{
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    flex-direction: row;
+    padding:24px;
+    padding-bottom:100px;
+    color:var(--secondary-color);
+    width:90%;
+}
+.reservation-section > .text-container{
+    width:50%;
+    max-width:500px;
+    min-width:300px;
+    margin: 0 auto;
+    padding:16px;
+    font-size:1.2em;
+    border:1px solid red;
+}
+.text-container > .btn-container{
+    font-weight: bold;
+    font-size:0.75em;
+    width:90%;
+    justify-content: flex-end;
+    display:flex;
+}
+.reservation-section > .image-container{
+    width:50%;
+    border:1px solid red;
+    display:flex;
+    justify-content: center;
+}
+.reservation-section > .image-container > img{
+    width:85%;
+    min-width:400px;
+}
+.information-section{
+    padding:20px 0px;
+    color:var(--secondary-color);
+}
+.location-container{
+    padding-bottom:20px;
+}
+.location-container > h5{
+    margin: 0 auto;
+    text-align: center;
+    font-size:1.25em;
+    margin-bottom:15px;
+}
+.location-container > p{
+    font-size:1.2em;
+    text-align: center;
+}
+.number{
+    text-align: center;
+    font-weight: bold;
+    color:#efd166;
+}
+ .hours-container{
+    margin-bottom:20px;
+}
+.hours-container > h5{
+    font-size:1.25em;
+    text-align: center;
+}
+.hours-container > li{
+    font-size:1.2em;
+    list-style-type: none;
+    text-align:center;
+    margin: 10px 0px;
 }
 /*Styling for the menu page.*/
 .menu-container{
@@ -133,4 +270,15 @@ input[type=submit]:hover{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:420px){
+    .hero-section > img{
+        width:300px;
+    }
+    .menu-section > .image-container > img{
+        max-width:300px;
+    }
+    .reservation-section > .image-container {
+        width:400px;
+    }
 }
