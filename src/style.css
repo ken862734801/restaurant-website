@@ -11,6 +11,7 @@ body{
     min-height: 100vh;
     min-width:100vw;
     background-color:#fdf8ee;
+    overflow-x: hidden;
 }
 /*Styling for the landing page. */
 
@@ -37,17 +38,18 @@ body{
     margin-top:10px;
     font-size:2em;
     text-align: center;
+    margin-bottom:10px;
 }
 .about-section > p{
     margin-top:10px;
     width:40%;
-    font-size:1.40em;
+    font-size:1.45em;
     text-align: center;
-    border:1px solid red;
     min-width:300px;
     margin: 0 auto;
 }
 .menu-section{
+    width:100%;
     display:flex;
     flex-wrap: wrap;
     color:var(--secondary-color);
@@ -55,11 +57,23 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    background-image: url(../dist/images/topborder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.menu-section > .image-container > img{
-    max-width:400px;
+.menu-wrapper{
+    width:75%;
+    display:flex;
+    flex-wrap: wrap;
 }
-.menu-section > .text-container{
+.menu-section > .menu-wrapper >.image-container{
+    max-width:480px;
+}
+.menu-section > .menu-wrapper > .image-container > img{
+    width:85%;
+    min-width:200px;
+}
+.menu-section > .menu-wrapper > .text-container{
     width:40%;
     max-width:500px;
     min-width:300px;
@@ -67,16 +81,32 @@ body{
     padding:16px;
     font-size:1.2em;
 }
+.menu-wrapper > .text-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-wrapper > .text-container > h3{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+}
 .text-container > p{
     margin-top: 10px;
 }
-.menu-section > .text-container > .btn-container{
-    font-weight: bold;
-    font-size:0.75em;
-    width:100%;
-    justify-content: flex-start;
+.menu-wrapper > .text-container > .btn-container{
+    width:125px;
+    justify-content: center;
     display:flex;
+    font-size:0.80em;
+    margin-top:25px;
+    font-weight: bold;
 }
+.menu-wrapper > .text-container > .btn-container:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .reservation-section{
     display:flex;
     flex-wrap: wrap-reverse;
@@ -85,39 +115,55 @@ body{
     padding:24px;
     padding-bottom:100px;
     color:var(--secondary-color);
-    width:90%;
+    width:85%;
 }
 .reservation-section > .text-container{
-    width:50%;
+    width:75%;
     max-width:500px;
     min-width:300px;
     margin: 0 auto;
     padding:16px;
     font-size:1.2em;
-    border:1px solid red;
-}
-.text-container > .btn-container{
-    font-weight: bold;
-    font-size:0.75em;
-    width:90%;
-    justify-content: flex-end;
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reservation-section > .text-container > h3{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+}
+.reservation-section >.text-container > .btn-container{
+    width:140px;
+    justify-content: center;
+    display:flex;
+    font-size:0.80em;
+    margin-top:25px;
+    font-weight: bold;
+}
+.reservation-section >.text-container > .btn-container:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .reservation-section > .image-container{
-    width:50%;
-    border:1px solid red;
+    width:40%;
+    padding-left:25px;
     display:flex;
     justify-content: center;
 }
 .reservation-section > .image-container > img{
-    width:85%;
-    min-width:400px;
+    width:100%;
+    min-width:675px;
 }
 .information-section{
     padding:20px 0px;
     color:var(--secondary-color);
+    background-image: url(../dist/images/bottomborder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .location-container{
+    margin-top:20px;
     padding-bottom:20px;
 }
 .location-container > h5{
@@ -125,6 +171,9 @@ body{
     text-align: center;
     font-size:1.25em;
     margin-bottom:15px;
+}
+.location-container > h5:last-of-type{
+    margin-top:20px;
 }
 .location-container > p{
     font-size:1.2em;
@@ -214,12 +263,13 @@ header > p{
 .contact-header{
     margin-top:30px;
     margin-bottom:10px;
+    font-size:1.35em;
 }
 .contact-subheader{
     margin-top:10px;
     margin-bottom:20px;
-    font-size:1.1em;
-    max-width:500px;
+    font-size:1.0em;
+    max-width:450px;
 }
 .contact-container{
     width:25%;
@@ -275,10 +325,14 @@ input[type=submit]:hover{
     .hero-section > img{
         width:300px;
     }
+    .about-section > p{
+        max-height:150px;
+        width:350px;
+    }
     .menu-section > .image-container > img{
-        max-width:300px;
+        width:250px;
     }
     .reservation-section > .image-container {
-        width:400px;
+        width:200px;
     }
 }
