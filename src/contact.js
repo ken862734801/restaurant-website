@@ -1,11 +1,14 @@
-import "./style.css";
+//Imported functions.
 import {navbar} from "./components/navbar";
+import "./style.css";
+
 
 export function loadContact(){
 
     //Variable for content div.
     const content = document.getElementById("content");
 
+    //Function to create navbar.
     navbar();
 
     //Variables for contact form header.
@@ -15,7 +18,7 @@ export function loadContact(){
 
     let contactSubHeader = document.createElement("p");
     contactSubHeader.className = "contact-subheader";
-    contactSubHeader.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque est sed nulla placerat volutpat.Proin non lorem quis arcu rutrum volutpat ut id orci. Duis condimentum rhoncus elementum.";
+    contactSubHeader.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque est sed nulla placerat volutpat. Proin non lorem quis arcu rutrum volutpat ut id orci. Duis condimentum rhoncus elementum.";
 
     //Variables for contact form.
     let contactContainer = document.createElement("div");
