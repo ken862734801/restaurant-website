@@ -39,6 +39,10 @@ navbar > li:hover{
     margin: 0 auto;
     padding: 80px 100px;
     margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
 }
 .about-section > h2{
     margin-top:10px;
@@ -76,8 +80,8 @@ navbar > li:hover{
     max-width:480px;
 }
 .menu-section > .menu-wrapper > .image-container > img{
-    width:85%;
-    min-width:200px;
+    width:75%;
+    min-width:275px;
 }
 .menu-section > .menu-wrapper > .text-container{
     width:40%;
@@ -160,7 +164,7 @@ navbar > li:hover{
 .reservation-section > .image-container > img{
     width:100%;
     max-width:675px;
-    min-width:425px;
+    min-width:480px;
 }
 .information-section{
     padding:20px 0px;
@@ -328,21 +332,41 @@ input[type=submit]:hover{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:500px) {
+    .hero-section{
+        background-position-x:-1200px;
+    }
+}
+
 @media screen and (max-width:420px){
+    .hero-section{
+        background-position-x:-705px;
+    }
     .hero-section > img{
         width:300px;
     }
-    .about-section > p{
-        max-height:150px;
-        width:350px;
+    .about-section {
+        padding-left:100px;
     }
-    .menu-section > .image-container > img{
-        width:250px;
+    .about-section > p{
+        text-align: center;
+        margin-left:-40px;
+    }
+    .menu-wrapper > .text-container {
+        margin-top:10px;
+    }
+    .reservation-section{
+        margin-top:-20px;
+        padding-bottom:60px;
     }
     .reservation-section > .image-container {
         width:200px;
+        margin-left:-1px;
     }
     .reservation-section > .image-container > img{
-        min-width:375px;
+        min-width:480px;
+    }
+    .location-container{
+        margin-top:10px;
     }
 }
