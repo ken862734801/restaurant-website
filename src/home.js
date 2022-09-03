@@ -1,9 +1,10 @@
-import {heroNavbar} from "./load";
-import {createHeader2 } from "./load";
-import { createHeader3 } from "./load";
-import {createParagraph} from "./load";
-import { createHeader5 } from "./load";
-import { createListElements } from "./load";
+//Imported functions.
+import {homeNavbar} from "../src/components/homeNavbar";
+import {createHeader2} from "../src/components/DOM";
+import {createHeader3} from "../src/components/DOM";
+import {createParagraph} from "../src/components/DOM";
+import {createHeader5} from "../src/components/DOM";
+import {createListElements} from "../src/components/DOM";
 
 export function loadHome(){
 
@@ -22,7 +23,7 @@ export function loadHome(){
 
     content.appendChild(hero);
     
-    heroNavbar();
+    homeNavbar();
     hero.appendChild(logo);
 
     //Variables for about section.
@@ -36,6 +37,8 @@ export function loadHome(){
 
     //Variables for menu section.
     let menu = document.createElement("section");
+    let menuWrapper = document.createElement("div");
+    menuWrapper.className="menu-wrapper";
     menu.className = "menu-section";
     menu.id = "menu-section";
     
@@ -55,12 +58,15 @@ export function loadHome(){
 
     let btnContainer = document.createElement("div");
     btnContainer.className = "btn-container";
-    btnContainer.appendChild(createParagraph("FULL MENU"));
+    btnContainer.id = "menu-arrow";
+    btnContainer.innerHTML = "FULL MENU &#10230;"
 
     textContainer.appendChild(btnContainer);
     
-    menu.appendChild(imageContainer);
-    menu.appendChild(textContainer);
+    menuWrapper.appendChild(imageContainer);
+    menuWrapper.appendChild(textContainer);
+
+    menu.appendChild(menuWrapper);
     content.appendChild(menu);
 
     //Variables for reservation section.
@@ -84,7 +90,8 @@ export function loadHome(){
 
     let btnContainer2 = document.createElement("div");
     btnContainer2.className = "btn-container";
-    btnContainer2.appendChild(createParagraph("LEARN MORE"));
+    btnContainer2.id = "reservation-arrow";
+    btnContainer2.innerHTML = "LEARN MORE &#10230;"
 
     textContainer2.appendChild(btnContainer2);
 
@@ -129,5 +136,6 @@ export function loadHome(){
     information.appendChild(hoursContainer);
 
     content.appendChild(information);
-}
+};
+
 
