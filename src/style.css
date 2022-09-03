@@ -13,6 +13,12 @@ body{
     background-color:#fdf8ee;
     overflow-x: hidden;
 }
+navbar > li{
+    cursor: pointer;
+}
+navbar > li:hover{
+    text-decoration: underline;
+}
 /*Styling for the landing page. */
 
 .hero-section{
@@ -153,7 +159,8 @@ body{
 }
 .reservation-section > .image-container > img{
     width:100%;
-    min-width:675px;
+    max-width:675px;
+    min-width:425px;
 }
 .information-section{
     padding:20px 0px;
@@ -334,5 +341,8 @@ input[type=submit]:hover{
     }
     .reservation-section > .image-container {
         width:200px;
+    }
+    .reservation-section > .image-container > img{
+        min-width:375px;
     }
 }
