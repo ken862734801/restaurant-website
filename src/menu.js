@@ -1,5 +1,7 @@
+//Imported functions.
 import {navbar} from "./components/navbar";
 import "./style.css";
+
 export function loadMenu(){
 
     //Variable for content div.
@@ -279,6 +281,5 @@ createPizza();
     menuContainer.appendChild(pastaSection);
     menuContainer.appendChild(pizzaSection);
     menuContainer.appendChild(dessertSection);
-
 };
 
