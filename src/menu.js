@@ -134,27 +134,27 @@ function Item(title, price, description){
 };
 
 const pizza1 = new Item(
-    "FETTUCCINE",
+    "MARGHERITA",
     "15",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 );
 const pizza2 = new Item(
-    "BOLOGNESE",
+    "PEPPERONI",
     "13",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 );
 const pizza3 = new Item(
-    "CACIO E PEPE",
+    "PROSCIUTTO",
     "13",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 );
 const pizza4 = new Item(
-    "RAVIOLI",
+    "FORMAGGI",
     "12",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 );
 const pizza5 = new Item(
-    "LASAGNA",
+    "MARINARA",
     "15",
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 );
@@ -219,17 +219,17 @@ createPizza();
     };
     
     const dessert1 = new Item(
-        "FETTUCCINE",
+        "CANNOLI",
         "15",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     );
     const dessert2 = new Item(
-        "BOLOGNESE",
+        "TIRAMISU",
         "13",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     );
     const dessert3 = new Item(
-        "CACIO E PEPE",
+        "BISCOTTI",
         "13",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     );
