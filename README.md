@@ -22,7 +22,7 @@ At the beginning of this assignment, I couldn't really understanding the benefit
 
 ## Resources
 
-I spent most of my time looking up restaurant website designs/templates and came across a very interesting template designs on behance. I took major insipration but made sure to make some "artistic liberties". I used canva to "create" the logo and had to use photoshop to make edits for the background image.
+I spent a good amount of time looking up website templates and came across very interesting designs on behance and dribble. I took major insipration from them but made sure to make some "artistic liberties". I also used canva to "create" the logo and had to use photoshop to make edits for the background image.
 
 ### Canva
 https://www.canva.com/
