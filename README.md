@@ -15,7 +15,7 @@ The goal of this Odin Project assignment was to use Webpack and CSS to create a 
 
 [Link to the assignment.](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
-At the beginning of this assignment, I couldn't really understanding the benefits of webpack; however, upon completing the website I'm starting to realize just how value it is to be able to bundle and separate code into more manageable sections. That being said, there are still some sections of "spaghetti code" that I plan to come back to and refactor in the future. The page is somewhat responsive, but I also plan to add additional media queries at more of the common break points for a more uniform look throughout. 
+At the beginning of this assignment, I couldn't really understanding the benefits of webpack; however, upon completing the website I'm starting to realize just how value it is to be able to bundle and separate code into more manageable sections. That being said, there are still some sections of "spaghetti code" that I plan to come back to and refactor in the future. The page is somewhat responsive, but I plan to add additional media queries at more of the common break points for a more uniform look throughout. 
 
 ### Features
 - Tab navigation between the home, menu, and contact section.
