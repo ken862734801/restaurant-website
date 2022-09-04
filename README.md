@@ -10,7 +10,7 @@ View on mobile.
 
 ## Summary
 
-The goal of this Odin Project assignment was to use Javascript and Webpack to create a mock restaurant website without the use of hard-coded html.
+The goal of this Odin Project assignment was to use Javascript and Webpack to create a mock restaurant website.
 
 
 [Link to the assignment.](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
