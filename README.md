@@ -5,7 +5,7 @@ https://ken862734801.github.io/restaurant-website/
 
 ## Preview
 <img src="dist/images/Restaurant.gif">
-<img src="dist/images/RestaurantMobile.png" width="420" height="896">
+
 View on mobile.
 
 ## Summary
