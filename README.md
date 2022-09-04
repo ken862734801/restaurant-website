@@ -1,4 +1,4 @@
-# Library App
+# Restaurant Website
 
 ## Demo 
 https://ken862734801.github.io/restaurant-website/
